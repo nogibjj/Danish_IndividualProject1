@@ -4,20 +4,21 @@ import pandas as pd
 file_name = "Formula1_2023season_drivers.csv"
 
 # Csv open
-fantasy_dataframe = csv_open(file_name)
+f1_dataframe = csv_open(file_name)
 
-# fantasy_dataframe = pd.read_csv("Formula1_2023season_drivers.csv")
 
-# Group data
-grouped_fantasy_df = groupsorted_data(fantasy_dataframe)
-print(grouped_fantasy_df)
+grouped1 = grouping(f1_dataframe, "Team", "Points")
+grouped2 = grouping(f1_dataframe, "Country", "Points")
 
 # Print stats summary
-descriptioncsv = summary_stat(grouped_fantasy_df)
+descriptioncsv = summary_stat(grouped1)
 print(descriptioncsv)
 
 # Bar chart
-bar_chart(grouped_fantasy_df)
+bar_chart(grouped1)
 
 # Scatterplot
-scatterplot(grouped_fantasy_df)
+scatterplot(grouped1)
+
+# Mapplot
+mapplot(grouped2)

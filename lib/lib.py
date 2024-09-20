@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import geopandas as gpd
+import numpy as np
 
 
 # Read CSV
@@ -9,15 +10,38 @@ def csv_open(file_path):
     return data
 
 
-def groupsorted_data(dataframe):
-    # Group data by team and FPTS
-    grouped = pd.DataFrame(dataframe.groupby("Team")["Points"].sum()).reset_index(
+def grouping(Dataframe, GroupName, SumName):
+    # Group data by team and points
+    grouped = pd.DataFrame(Dataframe.groupby(GroupName)[SumName].sum()).reset_index(
         drop=False
     )
 
     # Sort the new dataframe in ascending order
-    grouped = grouped.sort_values(by="Points", ascending=True)
+    grouped = grouped.sort_values(by=SumName, ascending=True)
     return grouped
+
+
+# def groupsorted_data(dataframe):
+#     # Group data by team and points
+#     grouped = pd.DataFrame(dataframe.groupby("Team")["Points"].sum()).reset_index(
+#         drop=False
+#     )
+
+#     # Sort the new dataframe in ascending order
+#     grouped = grouped.sort_values(by="Points", ascending=True)
+#     return grouped
+
+
+# def groupsorted_country_data(dataframe):
+#     # Group data by country and points
+#     country_df = pd.DataFrame(dataframe.groupby("Country")["Points"].sum()).reset_index(
+#         drop=False
+#     )
+
+#     # Sort the new dataframe in ascending order
+#     country_df = country_df.sort_values(by="Points", ascending=True)
+
+#     return country_df
 
 
 def summary_stat(dataframe):
@@ -51,7 +75,7 @@ def bar_chart(dataframe):
 def scatterplot(dataframe):
     # Setting x to nfl team column and y to fantasy points column
     x = dataframe["Team"]
-    y = dataframe["Career Points"]
+    y = dataframe["Points"]
 
     # Plotting the scatter chart
     plt.scatter(x, y, color="red")
@@ -70,7 +94,7 @@ def scatterplot(dataframe):
 
 # Create mapplot
 def mapplot(dataframe):
-    url = "https://naturalearth.s3.amazonaws.com /110m_cultural/ne_110m_admin_0_countries.zip"
+    url = "https://naturalearth.s3.amazonaws.com/110m_cultural/ne_110m_admin_0_countries.zip"
     world = gpd.read_file(url)
 
     # Merge data (country_df) with the world geometry based on the "Country" column
