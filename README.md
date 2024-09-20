@@ -1,4 +1,4 @@
-# Danish_Maknojia_MiniProject2
+# Danish_Maknojia_Individual
 
 #Badge 1
 [![Lint](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/lint.yml)
