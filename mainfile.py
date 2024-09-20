@@ -1,5 +1,5 @@
-from lib.lib import *
-import pandas as pd
+from lib.lib import csv_open, grouping, summary_stat, bar_chart, scatterplot, mapplot
+
 
 file_name = "Formula1_2023season_drivers.csv"
 

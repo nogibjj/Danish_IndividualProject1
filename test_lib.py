@@ -12,7 +12,6 @@ from lib.lib import (
 )
 import pandas as pd
 from io import StringIO
-import matplotlib.pyplot as plt
 
 
 def test_csv_open():

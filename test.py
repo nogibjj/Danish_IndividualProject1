@@ -1,4 +1,11 @@
-from test_lib import *
+from test_lib import (
+    test_csv_open,
+    test_grouping,
+    test_summary_stat,
+    test_bar_chart,
+    test_scatterplot,
+    test_mapplot,
+)
 
 
 def run_tests():
