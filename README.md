@@ -1,13 +1,13 @@
 # Danish_Maknojia_MiniProject2
 
 #Badge 1
-[![CI](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/lint.yml)
+[![Lint](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/lint.yml)
 #Badge 2
-[![CI](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/test.yml)
+[![Test](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/test.yml)
 #Badge 3
-[![CI](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/format.yml)
+[![Format](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/format.yml)
 #Badge 4
-[![CI](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/install.yml)
+[![Install](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/install.yml)
 
 ## Objectives
 My project accomplishes the following tasks:
