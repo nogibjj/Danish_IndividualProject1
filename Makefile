@@ -6,7 +6,7 @@ format:
 
 lint:
 	ruff check *.py
-
+	
 test:
 	python -m pytest --nbval -cov test.py 
 
