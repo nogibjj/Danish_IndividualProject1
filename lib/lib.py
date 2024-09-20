@@ -21,29 +21,6 @@ def grouping(Dataframe, GroupName, SumName):
     return grouped
 
 
-# def groupsorted_data(dataframe):
-#     # Group data by team and points
-#     grouped = pd.DataFrame(dataframe.groupby("Team")["Points"].sum()).reset_index(
-#         drop=False
-#     )
-
-#     # Sort the new dataframe in ascending order
-#     grouped = grouped.sort_values(by="Points", ascending=True)
-#     return grouped
-
-
-# def groupsorted_country_data(dataframe):
-#     # Group data by country and points
-#     country_df = pd.DataFrame(dataframe.groupby("Country")["Points"].sum()).reset_index(
-#         drop=False
-#     )
-
-#     # Sort the new dataframe in ascending order
-#     country_df = country_df.sort_values(by="Points", ascending=True)
-
-#     return country_df
-
-
 def summary_stat(dataframe):
     # Get summary statistics
     description = dataframe.describe()
