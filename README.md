@@ -1,4 +1,4 @@
-# Danish_Maknojia_Individual
+# Danish Maknojia Individual Project 1
 
 [![Lint](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/lint.yml)
 
@@ -8,11 +8,15 @@
 
 [![Install](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/install.yml)
 
+## Video Project Description
+
+[Click Here](https://youtu.be/OsskO7cMh14?si=klrGCvgQLxxXarDb)
+
 ## Objectives
 The project structure must include the following files:
 Jupyter Notebook with: 
 
---Cells that perform descriptive statistics using Polars or Panda.
+--Cells that perform descriptive statistics using Polars or Pandas.
 
 --Tested by using nbval plugin for pytest
 
