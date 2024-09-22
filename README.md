@@ -9,28 +9,38 @@
 [![Install](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Danish_IndividualProject1/actions/workflows/install.yml)
 
 ## Objectives
-My project accomplishes the following tasks:
-- Python script using Pandas for descriptive statistics
-- Read a dataset (CSV or Excel)
-- Generate summary statistics (mean, median, standard deviation)
-- Create at least one data visualization
+The project structure must include the following files:
+Jupyter Notebook with: 
+--Cells that perform descriptive statistics using Polars or Panda.
+--Tested by using nbval plugin for pytest
+Makefile with the following:
+--Run all tests (must test notebook and script and lib)
+--Formats code with Python blackLinks to an external site.
+--Lints code with RuffLinks to an external site.
+--Installs code via:  pip install -r requirements.txt
+--test_script.py to test script
+--test_lib.py to test library
+--Pinned requirements.txt
+--Gitlab Actions performs all four Makefile commands with badges for each one in the README.md
+
 
 ## Data Set
-![alt text](readmeimage.png)
+![alt text](F1Main.jpeg)
 
-- Fantasy_Football_Projections_RB.csv is a dataset with the average standard fantasy scoring projections from the top 4 fantasy football websites
+- Formula1_2023season_drivers.csv is a dataset with the career driver statistics up to 2023 for active F1 drivers
 
 ## Project Content
 
-- The project contains the main file, which opens the Fantasy_Football_Projections_RB.csv, groups the data by team, and sorts in ascending order next a summary of statistics containing the mean, median (50%) & standard deviation, and two graphs are generated: one bar chart and the second a scatter graph.
+- The project contains the main file, which opens Formula1_2023season_drivers.csv, groups the data by team & country, and sorts in ascending order. Next, a summary of statistics (for team and points) is generated containing the mean, median (50%) & standard deviation, and three graphs are generated: one bar chart, the second a scatter graph, and a map plot showing the country with the most driver points.
 
 ## Summary Statistics
-![alt text](image.png)
+![alt text](SummaryStatsF1.png)
 
 ## Bar Chart
-![alt text](barchart.png)
+![alt text](BarchartF1.png)
 
 ## Scatter Plot
-![alt text](scatter.png)
+![alt text](dotplotF1.png)
 
-
+## Map Plot
+![alt text](mapplot.png)

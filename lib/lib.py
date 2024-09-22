@@ -10,14 +10,14 @@ def csv_open(file_path):
     return data
 
 
-def grouping(Dataframe, GroupName, SumName):
+def grouping(Dataframe, GroupName, Points):
     # Group data by team and points
-    grouped = pd.DataFrame(Dataframe.groupby(GroupName)[SumName].sum()).reset_index(
+    grouped = pd.DataFrame(Dataframe.groupby(GroupName)[Points].sum()).reset_index(
         drop=False
     )
 
     # Sort the new dataframe in ascending order
-    grouped = grouped.sort_values(by=SumName, ascending=True)
+    grouped = grouped.sort_values(by=Points, ascending=True)
     return grouped
 
 
