@@ -35,32 +35,7 @@ Makefile with the following:
 --Gitlab Actions performs all four Makefile commands with badges for each one in the README.md
 
 ## Directory Structure
-Danish_IndividualProject1
-├── .devcontainer
-│   ├── devcontainer.json
-│   └── Dockerfile
-├── .github/workflows
-│   ├── format.yml
-|   ├── install.yml
-|   ├── lint.yml
-|   └── test.yml
-├── lib
-|   └── lib.py
-├── .gitignore
-├── main_nb.ipynb
-├── mainfile.py
-├── Makefile
-├── README.md
-├── Formula1_2023season_drivers.csv
-├── requirements.txt
-├── test_lib.py
-├── test.py
-├── SummaryStatsF1.png
-├── test_file.csv
-├── BarchartF1.png
-├── dotplotF1.png
-├── F1main.jpeg
-└── mapplot.png
+![alt text](directorystruc.png)
 
 
 ## Data Set
